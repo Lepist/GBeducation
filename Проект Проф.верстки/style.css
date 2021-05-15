@@ -1,0 +1,146 @@
+*{
+    
+}
+.header{
+    background-color: #222222;
+    padding: 18px 0 19px 0;
+    max-height: 75px;
+}
+.container{
+    max-width: 1160px;
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+.header__container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.header__left{
+    
+}
+.header__right{
+
+}
+.head{
+    background-color: #F1E4E6;;
+    min-height: 764px;
+}
+.container__logo{
+    display: flex;
+    flex-grow: 1;
+    align-items:center;
+    outline: 1px black;
+    margin: 0 auto;
+}
+.container__logo-1st-block{
+    align-items: flex-end;
+}
+.container__logo-2nd-block{
+    padding-left: 16px;
+    border-left: 6px solid #F16D7F;
+    height: 92px;
+    text-transform: uppercase;
+}
+.main{
+
+}
+.ManWoomenKidsCards{
+
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 65px 0 30px 0;
+}
+.card{
+    max-width: 360px;
+    outline: 1px red;
+}
+h1{
+    font-family: Lato;
+    font-weight: normal; 
+
+}
+.h1{
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #222222;
+}
+p{
+    font-family: Lato;
+    font-weight: normal;
+
+}
+.p{
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #9F9F9F;
+}
+
+.card{
+    min-height: 581px; /* Высота карточки товара */
+    background: #F8F8F8;
+    margin-bottom: 48px;
+}
+
+.CardImage{ /* Ширина,высота фото в карточке товара*/
+    width: 360px;
+    height: 420px;
+}
+.cardText{ /* Отступ всего текста под карточкой слева */
+    margin-left: 16px;
+}
+.pCard{ /* Параграф(название) карточки под фото */
+    margin-top: 25px 0px 12px 0px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.h1Card{ /* Текст под названием карточки под фото */
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    width: 315px;
+}
+.cardPrice{ /* Цена под описанием карточки $52.00 */
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+.button{ /* Кнопка "Показать все продукты" под карточками*/
+    background: white;
+    border: 1px #F26376;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pButton{ /* Текст в кнопке */
+    text-align: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+}
+.footer{
+    background: #222224;
+    height: 100%;
+}
+.topFooter{
+    min-height: 341px;
+}
+.mediumFooter{
+    min-height: 448px;
+}
+.imgFooter{ /* Туплю и не понимаю как растянуть картику по нужному масштабу */
+    height: 448px;
+    min-width: 100%;
+}
+.buttomFooter{
+    min-height: 80px;
+}
