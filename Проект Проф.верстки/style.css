@@ -1,6 +1,9 @@
 *{
     
 }
+body{
+    font-family: Lato;
+}
 .header{
     background-color: #222222;
     padding: 18px 0 19px 0;
@@ -54,6 +57,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 65px 0 30px 0;
+}
+.promo-card{
+    
 }
 .card{
     max-width: 360px;
@@ -120,27 +126,58 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 95px;
 }
 .pButton{ /* Текст в кнопке */
     text-align: center;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+    
 }
 .footer{
     background: #222224;
     height: 100%;
 }
 .topFooter{
-    min-height: 341px;
+    min-height: 341px; /* разобраться с высотой блока */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+.delivery{
+    max-width: 360px;
+}
+.sale{
+    max-width: 360px;
+}
+.quality{
+    max-width: 360px;
+}
+.pFooter{
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    color: #FBFBFB;
+}
+.h1Footer{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
 }
 .mediumFooter{
-    min-height: 448px;
-}
-.imgFooter{ /* Туплю и не понимаю как растянуть картику по нужному масштабу */
+    background: url(img/medium-footer.svg) no-repeat;
+    background-size: cover;
     height: 448px;
-    min-width: 100%;
 }
+
 .buttomFooter{
     min-height: 80px;
 }
