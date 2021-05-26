@@ -56,10 +56,53 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 65px 0 30px 0;
 }
-.promo-card{
-    
+.categories_cards{
+    margin: 65px 0 30px 0;
+    padding: 0;
+}
+.tac{
+    text-align: center;
+}
+.categories-card{
+    width: 360px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.categories-for-womes{
+    background: url(img/cards/card-1.svg);
+    background-repeat: no-repeat;
+}
+.categories-for-mens{
+    background: url(img/cards/card-2.svg);
+    background-repeat: no-repeat;
+}
+.categories-for-kids{
+    background: url(img/cards/card-3.svg);
+    background-repeat: no-repeat;
+}
+.categories-accessories{
+    background: url(img/cards/card-4!.svg);
+    margin: 30px 0 100px 0;
+    width: 100%;
+    min-height: 180px;
+}
+.promo_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFF;
+}
+.promo_text_red{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F16D7D;
 }
 .card{
     max-width: 360px;
@@ -75,6 +118,7 @@ h1{
     line-height: 36px;
     text-align: center;
     color: #222222;
+
 }
 p{
     font-family: Lato;
@@ -121,19 +165,14 @@ p{
     color: #F16D7F;
 }
 .button{ /* Кнопка "Показать все продукты" под карточками*/
-    background: white;
-    border: 1px #F26376;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 95px;
-}
-.pButton{ /* Текст в кнопке */
-    text-align: center;
-    font-size: 16px;
-    line-height: 19px;
+    width: 212px;
+    height: 48px;
+    border: 1px solid #F26376;
     color: #F26376;
-    
+    padding: 15px;
+    background-color: transparent; /* удаляет серый фон кнопки */
+    text-align: center;
+    margin: 48px 0 100px 0;
 }
 .footer{
     background: #222224;
@@ -149,14 +188,9 @@ p{
     
     
 }
-.delivery{
+.features-max-width{
     max-width: 360px;
-}
-.sale{
-    max-width: 360px;
-}
-.quality{
-    max-width: 360px;
+    padding-top: 50px;
 }
 .pFooter{
     font-weight: 300;
@@ -176,8 +210,72 @@ p{
     background: url(img/medium-footer.svg) no-repeat;
     background-size: cover;
     height: 448px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+.MediumFooterLeft{
+    max-width: 360px;
+}
+.mediumFooterText{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 30px;
+    text-align: center;
+    color: black;
+}
+.mediumFooterText>span{
+    font-style: italic;
+}
+.MediumFooterRightParagraph1{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    color: #222224;
+    margin: 0;
+}
+.MediumFooterRightParagraph2{
+    font-size: 18px;
+    line-height: 167.2%;
+    color: #222224;
+    margin: 0;
+}
+.subscribe-form{
+    margin-top: 32px;
+    display: flex;
+}
+.subscribe-form-email{
+    border-bottom-left-radius: 13px;
+    border-top-left-radius: 13px;
+    padding: 0px 13px;
+    width: 256px;
+    height: 49px;
+    background: white;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.subscribe-form-button{
+    border-bottom-right-radius: 13px;
+    border-top-right-radius: 13px;
+    padding: 0px 13px;
+    width: 100px;
+    height: 49px;
+    background: #F16D7D;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
 }
 
 .buttomFooter{
     min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
