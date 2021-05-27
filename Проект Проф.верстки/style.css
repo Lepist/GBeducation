@@ -11,7 +11,6 @@ body{
 }
 .container{
     max-width: 1160px;
-    padding: 0 10px;
     width: 100%;
     margin: 0 auto;
 }
@@ -32,10 +31,10 @@ body{
 }
 .container__logo{
     display: flex;
-    flex-grow: 1;
     align-items:center;
     outline: 1px black;
     margin: 0 auto;
+    flex-wrap: nowrap;
 }
 .container__logo-1st-block{
     align-items: flex-end;
@@ -46,9 +45,7 @@ body{
     height: 92px;
     text-transform: uppercase;
 }
-.main{
 
-}
 .ManWoomenKidsCards{
 
 }
@@ -66,28 +63,33 @@ body{
 }
 .categories-card{
     width: 360px;
-    min-height: 260px;
+    height: 260px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.categories-for-womes{
+.categories-for-womens{
     background: url(img/cards/card-1.svg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .categories-for-mens{
     background: url(img/cards/card-2.svg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .categories-for-kids{
     background: url(img/cards/card-3.svg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .categories-accessories{
     background: url(img/cards/card-4!.svg);
+    background-repeat: no-repeat;
     margin: 30px 0 100px 0;
     width: 100%;
-    min-height: 180px;
+    height: 180px;
+    background-size: 100%;
 }
 .promo_text{
     font-weight: 400;
@@ -248,8 +250,8 @@ p{
     display: flex;
 }
 .subscribe-form-email{
-    border-bottom-left-radius: 13px;
-    border-top-left-radius: 13px;
+    border-bottom-left-radius: 22px;
+    border-top-left-radius: 22px;
     padding: 0px 13px;
     width: 256px;
     height: 49px;
@@ -260,8 +262,8 @@ p{
 }
 
 .subscribe-form-button{
-    border-bottom-right-radius: 13px;
-    border-top-right-radius: 13px;
+    border-bottom-right-radius: 22px;
+    border-top-right-radius: 22px;
     padding: 0px 13px;
     width: 100px;
     height: 49px;
@@ -278,4 +280,46 @@ p{
     justify-content: space-between;
     align-items: center;
     text-align: center;
+}
+@media (max-width: 768px){ /* Версия для планшета */
+    .container{
+        max-width: 735px;
+    }
+    .head{
+        max-height: 368px;
+    }
+    .categories-card {
+        width: 232px;
+        height: 167px;
+    }
+    .categories-accessories{
+        width: 100%;
+        height: 116px;
+        margin: 30px 0 0 0;
+    }
+    .promo_text{
+        margin: 0 0 8px 0;
+    }
+    .promo_text_red{
+        margin: 0 auto;
+    }
+    .categories_cards{
+    margin: 20px 0 150px 0;
+    }
+    .topFooter{
+        flex-direction: column;
+    }
+    .mediumFooter{
+        flex-direction: column;
+        min-height: 614px;
+    }
+    .MediumFooterLeft{
+        margin-top: 50px;
+    }
+    .MediumFooterRight{
+        margin-bottom: 100px;
+        max-height: 137px;
+    }
+}
+@media (max-width: 667px){ /* Мобильная версия */
 }
