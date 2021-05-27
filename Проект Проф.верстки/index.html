@@ -9,6 +9,7 @@
     <title>Main</title>
 </head>
 <body>
+    <!-- верхнее меню -->
     <header class="header">
         <div class="container header__container">
             <div class="header__left">
@@ -22,6 +23,8 @@
             </div>
         </div>
     </header>
+
+    <!-- ШАПКА -->
     <div class="head">
         <div class="container container__logo">
             <div class="container__logo-1st-block">
@@ -33,8 +36,11 @@
             </div>
         </div>
     </div>
+
+<!-- Каталоговая часть страницы -->
     <main class="container">
-        <ul class="cards categories_cards">
+    <!-- Карточки категорий товаров, промо/скидки -->
+        <ul class="categories_cards">
             <li class="categories-card categories-for-womens">
                 <p class="promo_text">30% off</p>
                 <h3 class="promo_text_red">for women</h3>
@@ -53,12 +59,20 @@
             </li>
         </ul>
 
+    <!-- Каталог -->
         <h1 class="h1">Fetured Items</h1>
         <p class="p">Shop for items based on what we featured in this week</p>
-        
         <section class="cards container">
             <div class="card">
-                <img class="GoodCardImage" src="img/cards/card-5.svg" alt="card-5">
+                <img class="GoodCardImage" src="img/cards/card-good-1.jpg" alt="card-5">
+                <div class="cardTextMargin-left">
+                    <p class="pCard">ELLERY X M'O CAPSULE</p>
+                    <h1 class="h1Card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</h1>
+                    <h1 class="cardPrice">$52.00</h1>
+                </div>
+            </div>
+            <div class="card">
+                <img class="GoodCardImage" src="img/cards/card-good-2.jpg" alt="card-6">
                 <div class="cardText">
                     <p class="pCard">ELLERY X M'O CAPSULE</p>
                     <h1 class="h1Card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</h1>
@@ -66,7 +80,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="GoodCardImage" src="img/cards/card-6.svg" alt="card-6">
+                <img class="GoodCardImage" src="img/cards/card-good-3.jpg" alt="card-7">
                 <div class="cardText">
                     <p class="pCard">ELLERY X M'O CAPSULE</p>
                     <h1 class="h1Card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</h1>
@@ -74,7 +88,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="GoodCardImage" src="img/cards/card-7.svg" alt="card-7">
+                <img class="GoodCardImage" src="img/cards/card-good-4.jpg" alt="card-8">
                 <div class="cardText">
                     <p class="pCard">ELLERY X M'O CAPSULE</p>
                     <h1 class="h1Card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</h1>
@@ -82,7 +96,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="GoodCardImage" src="img/cards/card-8.svg" alt="card-8">
+                <img class="GoodCardImage" src="img/cards/card-good-5.jpg" alt="card-9">
                 <div class="cardText">
                     <p class="pCard">ELLERY X M'O CAPSULE</p>
                     <h1 class="h1Card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</h1>
@@ -90,15 +104,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="GoodCardImage" src="img/cards/card-9.svg" alt="card-9">
-                <div class="cardText">
-                    <p class="pCard">ELLERY X M'O CAPSULE</p>
-                    <h1 class="h1Card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</h1>
-                    <h1 class="cardPrice">$52.00</h1>
-                </div>
-            </div>
-            <div class="card">
-                <img class="GoodCardImage" src="img/cards/card-10.svg" alt="card-10">
+                <img class="GoodCardImage" src="img/cards/card-good-6.jpg" alt="card-10">
                 <div class="cardText">
                     <p class="pCard">ELLERY X M'O CAPSULE</p>
                     <h1 class="h1Card">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</h1>
@@ -111,6 +117,7 @@
         
     </main>
 
+<!-- Подвал -->
     <footer class="footer">
         <div class="topFooter container">
             <div class="features-max-width">
@@ -130,29 +137,30 @@
             </div>
         </div>
         <div class="mediumFooter">
-            <div class="MediumFooterLeft">
-                <img src="img/face.png" alt="face">
-                <p class="p mediumFooterText">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum“</span></p>
-                
-            </div>
-            <div class="MediumFooterRight">
-                <form>
-                    <p class="MediumFooterRightParagraph1">SUBSCRIBE</p>
-                    <p class="MediumFooterRightParagraph2">FOR OUR NEWLETTER AND PROMOTION</p>
-                    <div class = "subscribe-form">
-                        <input class = "subscribe-form-email" type="email" name="email" placeholder="Enter Your Email">
-                        <button type="submit" class = "subscribe-form-button"type="button">Subscribe</button>
-                    </div>
-                </form>
+            <div class="container mediumFooterContainer">
+                <div class="MediumFooterLeft">
+                    <img src="img/face.png" alt="face">
+                    <p class="p mediumFooterText">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span>a pulvinar purus condimentum“</span></p>
+                </div>
+                <div class="MediumFooterRight">
+                    <form>
+                        <p class="MediumFooterRightParagraph1">SUBSCRIBE</p>
+                        <p class="MediumFooterRightParagraph2">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <div class = "subscribe-form">
+                            <input class = "subscribe-form-email" type="email" name="email" placeholder="Enter Your Email">
+                            <button type="submit" class = "subscribe-form-button"type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="buttomFooter container">
             <div class="p"><p>© 2021  Brand  All Rights Reserved.</p></div>
             <div class="socials-links">
-                <a href="#"><img src="img/facebook-ico.jpg" alt="Our facebook"></a>
-                <a href="#"><img src="img/instagram-ico.jpg" alt="Our instagram"></a>
-                <a href="#"><img src="img/pinterest-ico.jpg" alt="Our pinterest"></a>
-                <a href="#"><img src="img/twitter-ico.jpg" alt="Our twitter"></a>
+                <a href="#"><img src="img/social-facebook-ico.jpg" alt="Our facebook"></a>
+                <a href="#"><img src="img/social-instagram-ico.jpg" alt="Our instagram"></a>
+                <a href="#"><img src="img/social-pinterest-ico.jpg" alt="Our pinterest"></a>
+                <a href="#"><img src="img/social-twitter-ico.jpg" alt="Our twitter"></a>
             </div>
         </div>
     </footer>

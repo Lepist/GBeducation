@@ -57,9 +57,9 @@ body{
 .categories_cards{
     margin: 65px 0 30px 0;
     padding: 0;
-}
-.tac{
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .categories-card{
     width: 360px;
@@ -67,24 +67,28 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+.tac{
+    text-align: center;
 }
 .categories-for-womens{
-    background: url(img/cards/card-1.svg);
+    background: url(img/cards/categories-card-for-womens.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .categories-for-mens{
-    background: url(img/cards/card-2.svg);
+    background: url(img/cards/categories-card-for-mens.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .categories-for-kids{
-    background: url(img/cards/card-3.svg);
+    background: url(img/cards/categories-card-for-kids.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .categories-accessories{
-    background: url(img/cards/card-4!.svg);
+    background: url(img/cards/categories-card-accessories.jpg);
     background-repeat: no-repeat;
     margin: 30px 0 100px 0;
     width: 100%;
@@ -95,37 +99,36 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    text-align: center;
     color: #FFF;
+    margin: 0;
 }
 .promo_text_red{
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
-    text-align: center;
     text-transform: uppercase;
     color: #F16D7D;
+    margin: 5px;
 }
 .card{
     max-width: 360px;
     outline: 1px red;
+    background: #F8F8F8;
+    margin: 0 2px 48px 2px;  /* чтобы при адаптации карточки не прижимались вплотную между собой */
 }
 h1{
     font-family: Lato;
     font-weight: normal; 
-
 }
 .h1{
     font-size: 30px;
     line-height: 36px;
     text-align: center;
     color: #222222;
-
 }
 p{
     font-family: Lato;
     font-weight: normal;
-
 }
 .p{
     font-size: 14px;
@@ -133,17 +136,11 @@ p{
     text-align: center;
     color: #9F9F9F;
 }
-
-.card{
-    background: #F8F8F8;
-    margin-bottom: 48px;
-}
-
 .CardImage{ /* Ширина,высота фото в карточке товара*/
     width: 360px;
     height: 420px;
 }
-.cardText{ /* Отступ всего текста под карточкой слева */
+.cardTextMargin-left{ /* Отступ всего текста под карточкой слева */
     margin-left: 16px;
 }
 .pCard{ /* Параграф(название) карточки под фото */
@@ -210,12 +207,14 @@ p{
 .mediumFooter{
     background: url(img/medium-footer.svg) no-repeat;
     background-size: cover;
-    height: 448px;
+}
+.mediumFooterContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
+    min-height: 448px;
 }
 .MediumFooterLeft{
     max-width: 360px;
@@ -280,6 +279,12 @@ p{
     align-items: center;
     text-align: center;
 }
+
+/* Catalog Page */
+.head-catalog{
+
+}
+
 @media (max-width: 768px){ /* Версия для планшета */
     .container{
         max-width: 735px;
@@ -312,6 +317,9 @@ p{
         flex-direction: column;
         min-height: 614px;
     }
+    .mediumFooterContainer{
+        flex-direction: column;
+    }
     .MediumFooterLeft{
         margin-top: 50px;
     }
@@ -319,6 +327,10 @@ p{
         margin-bottom: 100px;
         max-height: 137px;
     }
+    .card{
+        margin: 0 3px 48px 3px;
+    }
+
 }
 @media (max-width: 375px){ /* Мобильная версия */
     .cards{
