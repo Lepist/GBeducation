@@ -21,7 +21,7 @@ body{
 }
 .container-logo{
     min-height: 764px;
-    background-image: url(img/head-man.png);
+    background-image: url(../img/head-man.png);
     background-repeat: no-repeat;
     background-position: left bottom;
     background-size: contain;
@@ -74,22 +74,22 @@ body{
     text-align: center;
 }
 .categories-for-womens{
-    background: url(img/cards/categories-card-for-womens.jpg);
+    background: url(../img/cards/categories-card-for-womens.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .categories-for-mens{
-    background: url(img/cards/categories-card-for-mens.jpg);
+    background: url(../img/cards/categories-card-for-mens.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .categories-for-kids{
-    background: url(img/cards/categories-card-for-kids.jpg);
+    background: url(../img/cards/categories-card-for-kids.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .categories-accessories{
-    background: url(img/cards/categories-card-accessories.jpg);
+    background: url(../img/cards/categories-card-accessories.jpg);
     background-repeat: no-repeat;
     margin: 30px 0 100px 0;
     width: 100%;
@@ -206,7 +206,7 @@ p{
     color: #FBFBFB;
 }
 .mediumFooter{
-    background: url(img/medium-footer.svg) no-repeat;
+    background: url(../img/medium-footer.svg) no-repeat;
     background-size: cover;
 }
 .mediumFooterContainer{

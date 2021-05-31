@@ -1,0 +1,67 @@
+.catalog-head{
+    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog-head-h2{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 29px;
+    color: #F16D7F;
+}
+.catalog-head-p{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+}
+.catalog-head-p-red{
+    font-weight: 700;
+    color: #F16D7F;
+}
+.pages{
+    margin-bottom: 95px;
+}
+.filters-sizes-prices{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin: 51px 0 65px 0;
+}
+.filters{
+    flex-basis: 33%;
+    padding: 0 11px 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.filters-p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+}
+.filters-button{
+    border: none;
+    background-color: white;
+    height: 22.4px;
+}
+.sizes-prices{
+    flex-basis: 67%;
+    display: flex;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    
+}
+.margin-0{
+    margin: 0;
+}
