@@ -1,6 +1,3 @@
-*{
-    
-}
 body{
     font-family: Lato;
 }
@@ -14,41 +11,45 @@ body{
     width: 100%;
     margin: 0 auto;
 }
-.header__container{
+.header-container{
     display: flex;
     justify-content: space-between;
 
 }
-.header__left{
-    
-}
-.header__right{
-
-}
 .head{
-    background-color: #F1E4E6;;
+    background-color: #F1E4E6;
+}
+.container-logo{
     min-height: 764px;
-}
-.container__logo{
+    background-image: url(img/head-man.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
     display: flex;
-    align-items:center;
-    outline: 1px black;
-    margin: 0 auto;
-    flex-wrap: nowrap;
-}
-.container__logo-1st-block{
-    align-items: flex-end;
-}
-.container__logo-2nd-block{
-    padding-left: 16px;
-    border-left: 6px solid #F16D7F;
-    height: 92px;
+    flex-direction: row-reverse;
+    align-items: center;
     text-transform: uppercase;
 }
-
-.ManWoomenKidsCards{
-
+.logo{
+    border-left: 12px solid #F16D7F;
 }
+.theBrand{
+    margin: 10px 100px 1px 12px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 40px;
+    color: #222222;
+    
+}
+.ofLuxerious{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1px;
+}
+.fashion{
+    color: #F16D7F;
+}
+
 .cards{
     display: flex;
     justify-content: space-around;
@@ -62,8 +63,8 @@ body{
     flex-wrap: wrap;
 }
 .categories-card{
-    width: 360px;
-    height: 260px;
+    width: 32%;
+    height: 13vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +93,7 @@ body{
     background-repeat: no-repeat;
     margin: 30px 0 100px 0;
     width: 100%;
-    height: 180px;
+    height: 9vh;
     background-size: 100%;
 }
 .promo_text{
@@ -280,26 +281,38 @@ p{
     text-align: center;
 }
 
-/* Catalog Page */
-.head-catalog{
-
-}
-
-@media (max-width: 768px){ /* Версия для планшета */
+@media (max-width: 1190px){ /* Версия для десктопа поменьше FUll HD или перевернутого экрана*/
     .container{
-        max-width: 735px;
+        max-width: 95vw;
     }
-    .head{
-        max-height: 368px;
+    .container-logo{
+        min-height: 50vh;
     }
-    .categories-card {
-        width: 232px;
-        height: 167px;
+    .card{
+        min-height: 15vh;
     }
-    .categories-accessories{
-        width: 100%;
-        height: 116px;
-        margin: 30px 0 0 0;
+    .categories-card{
+        height: 20vh;
+    }
+}
+@media (max-width: 768px){ /* Версия для планшета */
+    .container-logo{
+        min-height: 368px;
+        background-size: 25%;
+        background-position: 22.5% 50%;
+    }
+    .theBrand{
+        max-width: 45vw;
+        margin: 18px 10px 14px 12px;
+        font-weight: 850;
+        font-size: 44px;
+        line-height: 30px;
+        color: #222222;
+    }
+    .ofLuxerious{
+        font-weight: 650;
+        font-size: 25px;
+        line-height: 1px;
     }
     .promo_text{
         margin: 0 0 8px 0;
@@ -310,18 +323,25 @@ p{
     .categories_cards{
     margin: 20px 0 150px 0;
     }
+    .categories-card{
+        height: 167px;
+    }
+    .categories-accessories{
+        width: 100%;
+        height: 116px;
+        margin: 30px 0 0 0;
+    }
     .topFooter{
         flex-direction: column;
     }
     .mediumFooter{
-        flex-direction: column;
         min-height: 614px;
     }
     .mediumFooterContainer{
         flex-direction: column;
     }
     .MediumFooterLeft{
-        margin-top: 50px;
+        margin: 50px 0;
     }
     .MediumFooterRight{
         margin-bottom: 100px;
@@ -332,15 +352,68 @@ p{
     }
 
 }
-@media (max-width: 375px){ /* Мобильная версия */
+@media (min-width: 376px) and (max-width: 705px){
+    .container-logo{
+        background: none;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .theBrand{
+        max-width: 95vh;
+    }
     .cards{
         flex-direction: column;
         align-items: center;
     }
+    /* .categories_cards{
+        flex-direction: column;
+        align-items: center;
+    } */
+    .categories_cards{
+        flex-direction: column;
+    }
     .categories-card{
-        min-width: 343px;
-        min-height: 248px;
+        margin-top: 2vh;
+        width: 100%;
+        height: 300px;
+    }
+    .categories-accessories{
+        background-size: cover;
+        background-position-x: center;
+    }
+}
+@media (max-width: 375px){ /* Мобильная версия */
+    .container{
+        max-width: 95vw;
+    }
+    .container-logo{
+        background: none;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .theBrand{
+        max-width: 95vh;
+    }
+    .categories_cards{
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0 64px 0;
+    }
+    .categories-card{
         margin-top: 32px;
+        width: 100%;
+        height: 250px;
+    }
+    .categories-accessories{
+        max-width: 343px;
+        min-height: 111px;
+        background-size: cover;
+        background-position-x: center;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .card{
         max-width: 350px;
@@ -348,10 +421,6 @@ p{
     }
     .GoodCardImage{
         max-width: 350px;
-    }
-    .categories-accessories{
-        background-size: auto;
-        background-position-x: center;
     }
     .buttomFooter{
         flex-direction: column-reverse;
