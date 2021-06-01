@@ -16,6 +16,10 @@ body{
     justify-content: space-between;
 
 }
+.header-ico-size{
+    width: 23px; 
+    margin-right: 33px;
+}
 .head{
     background-color: #F1E4E6;
 }
@@ -172,6 +176,13 @@ p{
     background-color: transparent; /* удаляет серый фон кнопки */
     text-align: center;
     margin: 48px 0 100px 0;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: #F26376;
+    color: white;
 }
 .footer{
     background: #222224;
@@ -258,6 +269,7 @@ p{
     border: none;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    outline:none;
 }
 
 .subscribe-form-button{
@@ -271,8 +283,31 @@ p{
     border: none;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
-
+.subscribe-form-button:hover{
+    background: #fa4a5f;
+}
+.socials-links{
+    display: flex;
+}
+.social-links-button{
+    width: 32px;
+    height: 32px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7px;
+}
+a{
+    margin-bottom: -4px;
+}
+.social-links-button:hover{
+    background: #F16D7F;
+}
 .buttomFooter{
     min-height: 80px;
     display: flex;
@@ -283,7 +318,7 @@ p{
 
 @media (max-width: 1190px){ /* Версия для десктопа поменьше FUll HD или перевернутого экрана*/
     .container{
-        max-width: 95vw;
+        max-width: 97vw;
     }
     .container-logo{
         min-height: 50vh;
@@ -352,7 +387,7 @@ p{
     }
 
 }
-@media (min-width: 376px) and (max-width: 705px){
+@media (min-width: 415px) and (max-width: 705px){
     .container-logo{
         background: none;
         flex-direction: column;
@@ -382,7 +417,7 @@ p{
         background-position-x: center;
     }
 }
-@media (max-width: 375px){ /* Мобильная версия */
+@media (max-width: 414px){ /* Мобильная версия Xs Max */
     .container{
         max-width: 95vw;
     }
@@ -424,5 +459,14 @@ p{
     }
     .buttomFooter{
         flex-direction: column-reverse;
+        margin-top: 43px;
+    }
+    .display-none{
+        display: none;
+    }
+    .header-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

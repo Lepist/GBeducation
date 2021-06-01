@@ -20,8 +20,8 @@
             </div>
             <div class="header-right">
                 <a href="#"><img src="img/menu-logo.svg" style="width: 23px; margin-right: 33px;" alt="menu"></a>
-                <a href="#"><img src="img/account.svg" style="width: 29px; margin-right: 33px;" alt="sign-in"></a>
-                <a href="#"><img src="img/basket-empty.svg" style="width: 32px;" alt="basket"></a>
+                <a class="display-none" href="#"><img src="img/account.svg" style="width: 29px; margin-right: 33px;" alt="sign-in"></a>
+                <a class="display-none" href="#"><img src="img/basket-empty.svg" style="width: 32px;" alt="basket"></a>
             </div>
         </div>
     </header>
@@ -43,18 +43,12 @@
         <div class="filters-sizes-prices">
             <div class="filters">
                 <p class="filters-p">filter</p>
-                <button class="filters-button"><img src="img/catalog-img/filters-button.svg" alt="filters"></button>
+                <button class="filters-button"><img class="filters-button-burger" src="img/catalog-img/filters-button.svg" alt="filters"></button>
             </div>
             <div class="sizes-prices">
-                <ul class="margin-0">TRENDING NOW
-                    <img src="img/catalog-img/drop-down-button.svg" alt="list of trends">
-                </ul>
-                <ul class="margin-0">size
-                    <img src="img/catalog-img/drop-down-button.svg" alt="list of sizes">
-                </ul>
-                <ul class="margin-0">price
-                    <img src="img/catalog-img/drop-down-button.svg" alt="list of prices">
-                </ul>
+                <ul class="margin-0">TRENDING NOW    <img src="img/catalog-img/drop-down-button.svg" alt="list of trends"></ul>
+                <ul class="margin-0">size    <img src="img/catalog-img/drop-down-button.svg" alt="list of sizes"></ul>
+                <ul class="margin-0">price    <img src="img/catalog-img/drop-down-button.svg" alt="list of prices"></ul>
             </div>
         </div>
         <section class="cards container">
@@ -130,12 +124,11 @@
                     <h1 class="cardPrice">$52.00</h1>
                 </div>
             </div>
-<!-- ЗАТЫЧКА - ДОДЕЛАТЬ -->
-            <div class="pages"> 
-                <img src="img/pages.jpg" alt="catalog pages">
-            </div>
-            
         </section>
+        <!-- ЗАТЫЧКА - ДОДЕЛАТЬ -->
+        <div class="pages container"> 
+            <img src="img/pages.jpg" alt="catalog pages">
+        </div>
     </main>
     
     <!-- Подвал -->
@@ -178,10 +171,10 @@
         <div class="buttomFooter container">
             <div class="p"><p>© 2021  Brand  All Rights Reserved.</p></div>
             <div class="socials-links">
-                <a href="#"><img src="img/social-facebook-ico.jpg" alt="Our facebook"></a>
-                <a href="#"><img src="img/social-instagram-ico.jpg" alt="Our instagram"></a>
-                <a href="#"><img src="img/social-pinterest-ico.jpg" alt="Our pinterest"></a>
-                <a href="#"><img src="img/social-twitter-ico.jpg" alt="Our twitter"></a>
+                <div class="social-links-button"><a href="#"><img src="img/social-facebook-ico.svg" alt="Our facebook"></a></div>
+                <div class="social-links-button"><a href="#"><img src="img/social-instagram-ico.svg" alt="Our instagram"></a></div>
+                <div class="social-links-button"><a href="#"><img src="img/social-pinterest-ico.svg" alt="Our pinterest"></a></div>
+                <div class="social-links-button"><a href="#"><img src="img/social-twitter-ico.svg" alt="Our twitter"></a></div>
             </div>
         </div>
     </footer>

@@ -26,6 +26,7 @@
 }
 .pages{
     margin-bottom: 95px;
+    text-align: center;
 }
 .filters-sizes-prices{
     display: flex;
@@ -64,4 +65,38 @@
 }
 .margin-0{
     margin: 0;
+}
+@media (max-width: 1190px){ /* Версия для десктопа поменьше FUll HD или перевернутого экрана*/
+
+    .sizes-prices{
+        justify-content: right;
+    }
+}
+@media (max-width: 414px){ /* Мобильная версия Xs Max */
+    .catalog-head{
+        flex-direction: column;
+        justify-content:flex-start;
+    }
+    .catalog-head-h2{
+        margin-top: 26px;
+    }
+    .filters-p{
+        display: none;
+    }
+    .filters{
+        padding: 0;
+    }
+    .filters-button-burger{
+        width: 37.5px;
+        height: 25px;
+    }
+    .margin-0{
+        padding-left: 20px;
+    }
+    .filters{
+        flex-basis: 10%;
+    }
+    .sizes-prices{
+        flex-basis: 90%;
+    }
 }
