@@ -31,8 +31,76 @@ body{
 }
 .header-ico-size{
     width: 23px; 
+    height: 33px;
     margin-right: 33px;
 }
+.header-right{
+    @include center;
+}
+.burger{
+    width: 28px;
+    height: 23px;
+    margin-right: 33px;
+    background: none;
+    border: none;
+    background-image: url(../img/menu-logo.svg);
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    height: 764px;
+    justify-content: flex-end;
+    display: none;
+}
+
+.overlay-open {
+    display: flex;
+}
+.menu {
+    width: 232px;
+    background: white;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    margin-top: 24px;
+}
+.menu-style{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: black;
+    text-transform: uppercase;
+    margin: 37px 143px 0 34px;
+}
+.menu-list{
+    list-style-type: none;
+    margin: 24px 0 0 33px;
+    padding: 0;
+    text-transform: uppercase;
+}
+.menu-list-inside{
+    list-style-type: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F16D7F;
+}
+.menu-inside-item{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+.menu-close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
 .head{
     background-color: #F1E4E6;
 }

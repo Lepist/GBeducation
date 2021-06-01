@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/catalog.css">
+    <script defer src="scripts/burger-menu.js"></script>
     <title>Интернет-магазин</title>
 </head>
 <body>
@@ -18,7 +19,45 @@
                 <a href="#"><img src="img/menu-search.svg" style="width: 27px;" alt="search"></a>
             </div>
             <div class="header-right">
-                <a href="#"><img src="img/menu-logo.svg" style="width: 23px; margin-right: 33px;" alt="menu"></a>
+                <nav>
+                    <button class="burger"></button>
+                    <div class="overlay">
+                        <div class="menu">
+                            <h2 class="menu-style">menu</h1>
+                            <ul class="menu-list">
+                                <li class="menu-paragraph"><a href="#" class="menu-link">man</a>
+                                    <ul class="menu-list-inside">
+                                        <li class="menu-inside-item">Accessories</li>
+                                        <li class="menu-inside-item">Bags</li>
+                                        <li class="menu-inside-item">Denim</li>
+                                        <li class="menu-inside-item">T-Shirts</li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="#" class="menu-link">woman</a>
+                                    <ul class="menu-list-inside">
+                                        <li class="menu-inside-item">Accessories</li>
+                                        <li class="menu-inside-item">Jackets & Coats</li>
+                                        <li class="menu-inside-item">Polos</li>
+                                        <li class="menu-inside-item">T-Shirts</li>
+                                        <li class="menu-inside-item">Shirts</li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item"><a href="#" class="menu-link">kids</a>
+                                    <ul class="menu-list-inside">
+                                        <li class="menu-inside-item">Accessories</li>
+                                        <li class="menu-inside-item">Jackets & Coats</li>
+                                        <li class="menu-inside-item">Polos</li>
+                                        <li class="menu-inside-item">T-Shirts</li>
+                                        <li class="menu-inside-item">Shirts</li>
+                                        <li class="menu-inside-item">Bags</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <button class="menu-close-btn">X</button>
+                        </div>
+                      </div>
+                </nav>
+                
                 <a class="display-none" href="#"><img src="img/account.svg" style="width: 29px; margin-right: 33px;" alt="sign-in"></a>
                 <a class="display-none" href="#"><img src="img/basket-empty.svg" style="width: 32px;" alt="basket"></a>
             </div>
