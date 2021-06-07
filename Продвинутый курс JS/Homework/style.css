@@ -4,7 +4,7 @@
 }
 .products{
     display: flex;
-    justify-content:;
+    justify-content: center;
     align-items: center;
 }
 .product-item{
