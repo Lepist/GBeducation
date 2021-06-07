@@ -5,19 +5,23 @@ const products = [
     {id: 4, title: 'Gamepad', price: 50},
 ];
 //Функция для формирования верстки каждого товара
-const renderProduct = (title, price) => {
+const renderProduct = product => {
     return `<div class="product-item">
                 <div class="item-photo"></div>
-                <h3>${title}</h3>
-                <p>Цена: ${price} р.</p>
+                <h3>${product.title}</h3>
+                <p>Цена: ${product.price} р.</p>
                 <button class="buy-btn">Купить</button>
             </div>`
 };
 const renderPage = list => {
-    let productsList = list.map(item => renderProduct(item.title, item.price));
+/*    let productsList = list.map(item => renderProduct(item.title, item.price));
     let joinProductList = productsList.join("");
     console.log(joinProductList);
     document.querySelector('.products').innerHTML = joinProductList;
+    // Мой вариант    
+*/
+    document.querySelector('.products').innerHTML = list.map(item => renderProduct(item)).join('');
+    // вариант увиденный на 2 уроке(разобрался)
 };
 
 renderPage(products);
