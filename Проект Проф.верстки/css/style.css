@@ -246,9 +246,11 @@ body {
   border: 1px solid #FFFFFF;
 }
 .card-add:hover {
+  transition: 0.3s;
   background-color: #fff;
   color: grey;
 }
+
 
 .card-overlay {
   background: rgba(58, 56, 56, 0.86);
@@ -264,6 +266,12 @@ body {
   transition: 0.5s;
 }
 
+.GoodCardImage{
+    /* Ширина,высота фото в карточке товара*/
+    position: relative;
+    width: 360px;
+    height: 420px;
+}
 .GoodCardImage:hover .card-overlay {
   opacity: 1;
 }
@@ -292,11 +300,7 @@ p {
   color: #9F9F9F;
 }
 
-.CardImage {
-  /* Ширина,высота фото в карточке товара*/
-  width: 360px;
-  height: 420px;
-}
+
 
 .cardTextMargin-left {
   /* Отступ всего текста под карточкой слева */
