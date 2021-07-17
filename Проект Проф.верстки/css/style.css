@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   font-family: Lato;
+  margin: 0;
 }
 
 .header {
@@ -487,9 +488,9 @@ p {
 }
 .social-links-button:hover {
   background: #F16D7F;
+  transition: 0.3s;
 }
-
-a {
+a{
   margin-bottom: -4px;
 }
 
