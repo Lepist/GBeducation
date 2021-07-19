@@ -245,6 +245,7 @@ body {
   background-color: transparent;
   color: #fff;
   border: 1px solid #FFFFFF;
+  transition: 0.3s;
 }
 .card-add:hover {
   transition: 0.3s;
@@ -470,6 +471,7 @@ p {
 }
 .subscribe-form-button:hover {
   background: #fa4a5f;
+  transition: 0.3s;
 }
 
 .socials-links {
@@ -485,6 +487,7 @@ p {
   align-items: center;
   margin-right: 7px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .social-links-button:hover {
   background: #F16D7F;
