@@ -162,7 +162,7 @@ body {
 
 .cards {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -209,10 +209,10 @@ body {
 .categories-accessories {
   background: url(../img/cards/categories-card-accessories.jpg);
   background-repeat: no-repeat;
-  margin: 30px 0 100px 0;
+  background-size: cover;
+  margin: 2.4vh 0 100px 0;
   width: 100%;
   height: 180px;
-  background-size: 100%;
 }
 
 .promo_text {
@@ -246,6 +246,7 @@ body {
   color: #fff;
   border: 1px solid #FFFFFF;
   transition: 0.3s;
+  cursor: pointer;
 }
 .card-add:hover {
   transition: 0.3s;
@@ -315,6 +316,7 @@ p {
   font-size: 13px;
   line-height: 16px;
   color: black;
+  cursor: pointer;
 }
 
 .h1Card {
@@ -391,7 +393,7 @@ p {
 }
 
 .mediumFooter {
-  background: url(../img/medium-footer.svg) no-repeat;
+  background: url(../img/medium-footer.png) no-repeat;
   background-size: cover;
 }
 
@@ -522,6 +524,13 @@ a{
   .categories-card {
     height: 20vh;
   }
+  
+  .cards{
+    justify-content: space-evenly;
+  }
+  .mediumFooterContainer{
+    justify-content: space-around;
+  }
 }
 @media (max-width: 768px) {
   /* Версия для планшета */
@@ -624,7 +633,6 @@ a{
   }
 
   .categories-accessories {
-    background-size: cover;
     background-position-x: center;
   }
 }
@@ -658,7 +666,6 @@ a{
 
   .categories-accessories {
     min-height: 111px;
-    background-size: cover;
     background-position-x: center;
   }
 
